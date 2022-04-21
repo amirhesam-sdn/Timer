@@ -93,8 +93,11 @@ function reflexTimerHandler(){
         }
     }
 
-    if (hourNumber.innerHTML < 1 && minNumber.innerHTML < 1 && secNumber.innerHTML < 10 ) {
-        document.body.style.backgroundColor = "red";
+    if (hourNumber.innerHTML < 1 && minNumber.innerHTML < 1 && secNumber.innerHTML < 11 ) {
+        document.body.classList.add('ani');
+        if (secNumber.innerHTML < 1) {
+            document.body.classList.remove('ani');
+        }
     }
 }
 

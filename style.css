@@ -18,6 +18,10 @@ body {
   background-color: var(--background-bodylight);
 }
 
+.ani {
+  animation: body 3s ease-out infinite alternate;
+}
+
 .countainer {
   position: absolute;
   top: 50%;
@@ -80,4 +84,14 @@ input[type='number'] {
 
 .hidden {
   display: none;
+}
+
+@keyframes body {
+  0% {
+    background-color: #fff;
+  }
+
+  100% {
+    background-color: #ee2727;
+  }
 }
